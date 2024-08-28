@@ -10,6 +10,7 @@ class PpkpPertanyaanJawaban extends Component
 {
     use WithPagination;
 
+    protected $paginationTheme = 'tailwind';
     public $lengthData = 25;
     public $searchTerm;
     public $previousSearchTerm = '';
@@ -35,7 +36,7 @@ class PpkpPertanyaanJawaban extends Component
 
         $data = ModelsPpkp::where('pertanyaan', 'LIKE', $search)
             ->orWhere('jawaban', 'LIKE', $search)
-            ->paginate($this->lengthData);
+            ->paginate(25);
 
         return view('livewire.module.perkuliahan.ppkp-pertanyaan-jawaban', compact('data'))->extends('components.layouts.welcome')->title('List Pertanyaan Jawaban PKKP');
     }

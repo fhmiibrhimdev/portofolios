@@ -4,7 +4,8 @@
         <div class="tw-mt-5" id="isi-catatan" style="font-family: 'Roboto', sans-serif;">
             <h1 class="tw-text-2xl tw-font-bold tw-text-blue-100">List Pertanyaan Jawaban</h1>
             <div class="tw-mt-5">
-                <input type="search" class="tw-w-full form-control tw-bg-gray-900 tw-borders tw-border-gray-800">
+                <input type="search" wire:model.live.debounce.750ms="searchTerm"
+                    class="tw-w-full form-control tw-bg-gray-900 tw-borders tw-border-gray-800">
             </div>
             <div class="tw-mt-5 tw-text-gray-100 tw-tracking-wide tw-leading-loose">
                 @foreach ($data as $row)
@@ -15,5 +16,6 @@
                 @endforeach
             </div>
         </div>
+        <div class="tw-mt-5">{{ $data->links() }}</div>
     </div>
 </div>
