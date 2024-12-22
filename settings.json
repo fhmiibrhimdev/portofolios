@@ -1,0 +1,100 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "600",
+  "editor.formatOnSave": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "editor.fontSize": 14,
+  "workbench.colorTheme": "Ocean High Contrast",
+  "editor.tokenColorCustomizations": {
+    "[Ocean High Contrast]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "keyword",
+            "storage",
+            "keyword.control",
+            "constant.language",
+            "constant.numeric",
+            "entity.name.type.class",
+            "support.type",
+            "storage.type"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    }
+  },
+  "editor.guides.indentation": false,
+  "editor.lineHeight": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [120],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "matchingDocuments"
+  },
+  // "editor.semanticTokenColorCustomizations": {
+  //   "enabled": true,
+  //   "rules": {
+  //     "property": "#E06C75",
+  //     "property.declaration": "#E06C75",
+  //     // Variables
+  //     "typeParameter": "#ffffff",
+  //     "label": "#f9f5f5",
+  //     "struct": "#fefefe",
+  //     "parameter": "#D19A66",
+  //     "string": "#98C379",
+  //     "variable": "#61AFEE",
+  //     "namespace": "#ffffff",
+  //     "macro": "#f9f8f9",
+  //     "keyword": "#C678DD",
+  //     // String interpolation
+  //     "source.interpolation": "#ffffff",
+  //     // Entity, Type
+  //     "type": "#E5C07B",
+  //     "class": "#E5C07B",
+  //     "type.declaration": "#ffffff",
+  //     // Entity initialisation
+  //     "class.constructor": "#85baff",
+  //     "method.constructor": "#ffffff",
+  //     "function": "#10dfff",
+  //     "method": "#f643ff",
+  //     // Annotations
+  //     "class.annotation": "#ffffff",
+  //     "property.annotation": "#ff4848",
+  //     "annotation": "#E5C07B"
+  //   }
+  // },
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "editor.folding": true,
+  "editor.foldingStrategy": "indentation",
+  "remote.SSH.remotePlatform": {
+    "167.71.204.253": "linux",
+    "159.223.61.133": "linux"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // "window.zoomLevel": -1,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "cSpell.userWords": [
+    "RGBO"
+  ],
+  // "files.autoSave": "afterDelay"
+}
